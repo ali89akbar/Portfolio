@@ -2,6 +2,30 @@ import { animate, motion } from 'framer-motion'
 import React from 'react'
 import "./Hero.scss"
 
+
+const slidervariants={
+    initial:{
+        x:0,
+    },
+    animate:{
+        x:"220%",
+        opacity:1,
+        transition:{
+            repeat:Infinity,
+            duration:20,
+
+        },
+    },
+scrollButton:{
+    opacity:0,
+    y:10,
+    transition:{
+        duration:2,
+        repeat:Infinity
+}
+},
+};
+
 const textvariants={
     initial:{
         x:-500,
@@ -39,7 +63,7 @@ const Hero = () => {
         <motion.img variants={textvariants} animate="scrollButton" src="/scrolls.png" alt="" />
         </motion.div>
     </div>
-<div className="slidingtext">
+<div className="slidingtext" variants={slidervariants}>
     Mern Stack Developer 
 </div>
     <div className="ImageContainer">
