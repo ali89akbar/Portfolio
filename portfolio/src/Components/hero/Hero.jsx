@@ -8,22 +8,15 @@ const slidervariants={
         x:0,
     },
     animate:{
-        x:"220%",
+        x:"-220%",
         opacity:1,
         transition:{
             repeat:Infinity,
+            repeatType:"mirror",
             duration:20,
 
         },
     },
-scrollButton:{
-    opacity:0,
-    y:10,
-    transition:{
-        duration:2,
-        repeat:Infinity
-}
-},
 };
 
 const textvariants={
@@ -63,9 +56,9 @@ const Hero = () => {
         <motion.img variants={textvariants} animate="scrollButton" src="/scrolls.png" alt="" />
         </motion.div>
     </div>
-<div className="slidingtext" variants={slidervariants}>
+<motion.div className="slidingtext" variants={slidervariants} initial="initial" animate="animate">
     Mern Stack Developer 
-</div>
+</motion.div>
     <div className="ImageContainer">
         <img src="/remove.png" alt="" />
     </div>
