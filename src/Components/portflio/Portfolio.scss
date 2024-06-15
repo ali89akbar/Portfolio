@@ -1,0 +1,80 @@
+.portfolio {
+    position: relative;
+    overflow: hidden;
+    .progress {
+      position: sticky;
+      top: 0;
+      left: 0;
+      padding-top: 50px;
+      text-align: center;
+      font-size: 36px;
+  
+      h1 {
+        margin-bottom: 10px;
+      }
+  
+      .progressbar {
+        height: 10px;
+        background-color: white;
+        width: 100%;
+      }
+    }
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 50px 0; // added padding for better spacing
+    }
+  
+    .wrapper {
+      max-width: 1366px;
+      width: 100%; // ensure wrapper takes full width
+      display: flex;
+    align-items: center;
+    justify-content: center;  
+      .imgcontainer {
+        flex: 0.4;
+        height: auto; // let the height adjust based on content
+        display: flex; // ensure the image container flexes
+        align-items: center; // center the image vertically
+        justify-content: center; // center the image horizontally
+  
+        img {
+          max-width: 100%; // prevent image from overflowing
+          max-height: 100%; // maintain aspect ratio
+          object-fit: cover; // ensure the image covers the container
+        }
+      }
+  
+      .textcontainer {
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%; // ensure text container takes available width
+        padding: 60px; // add padding for better spacing
+        gap: 3px;
+        h2 {
+            font-size: 42px
+        }
+  
+        p {
+            color: gray;
+            font-size: 20px;
+        }
+        button{
+            background-color: orange;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            cursor: pointer;
+        }
+  
+        
+      }
+    }
+  }
+  
