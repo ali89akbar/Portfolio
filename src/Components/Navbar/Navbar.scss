@@ -1,3 +1,6 @@
+
+@import "../../app.scss";
+
 .navbar {
     height: 100px;
     margin-left: 190px;
@@ -8,10 +11,19 @@
         align-items: center;
         justify-content: space-between;
         height: 100%;
+        @include mobile{
+           justify-content: flex-end;
+           padding: 20px;
+        }
+
         .name {
             display: flex;
             align-items: center;
             gap: 20px; /* Adjust the gap as needed */
+        }
+        span{
+            font-weight: bold;
+           
         }
 
         .social-media {

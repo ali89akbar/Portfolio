@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .portfolio {
     position: relative;
     overflow: hidden;
@@ -8,6 +10,13 @@
       padding-top: 50px;
       text-align: center;
       font-size: 36px;
+
+      @include mobile{
+        padding-top: calc(100vh - 100px);
+        bottom: 0;
+        font-size: 24px;
+
+    }
   
       h1 {
         margin-bottom: 10px;
@@ -34,17 +43,26 @@
       display: flex;
     align-items: center;
     justify-content: center;  
+    @include mobile{
+     flex-direction: column;
+  }
       .imgcontainer {
         flex: 0.4;
         height: auto; // let the height adjust based on content
         display: flex; // ensure the image container flexes
         align-items: center; // center the image vertically
         justify-content: center; // center the image horizontally
-  
+        @include mobile{
+          width: 100%;
+          max-height: 300px;
+      }
         img {
           max-width: 100%; // prevent image from overflowing
           max-height: 100%; // maintain aspect ratio
-          object-fit: cover; // ensure the image covers the container
+          object-fit: cover;
+          @include mobile{
+            object-fit: contain;
+        } // ensure the image covers the container
         }
       }
   
@@ -56,13 +74,25 @@
         max-width: 100%; // ensure text container takes available width
         padding: 60px; // add padding for better spacing
         gap: 3px;
+        @include mobile{
+          transform: none !important;
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+      }
         h2 {
-            font-size: 42px
+            font-size: 42px;
+            @include mobile{
+              font-size: 36px;
+          }
         }
   
         p {
             color: gray;
             font-size: 20px;
+            @include mobile{
+              font-size: 16px;
+          }
         }
         button{
             background-color: orange;

@@ -8,6 +8,8 @@ import Parallax from './Components/parallax/Parallax';
 import Services from './Components/services/Services';
 import Portfolio from './Components/portflio/Portfolio';
 import Contact from './Components/contact/Contact';
+import Footer from './Components/Footer/Footer';
+import Cursor from './Components/cursor/cursor';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +17,7 @@ function App() {
   return (
     
       <>
+      <Cursor/>
         <section id='Homepage' >
           <Navbar/>
           <Hero/>

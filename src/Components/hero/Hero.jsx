@@ -60,7 +60,7 @@ const Hero = () => {
     Mern Stack Developer 
 </motion.div>
     <div className="ImageContainer">
-        <img src="/remove.png" alt="" />
+        <img src="/" alt="" />
     </div>
 </div>  
 )
