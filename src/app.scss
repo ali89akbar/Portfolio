@@ -32,7 +32,7 @@ section{
 
 .box{
     width: 200px;
-    height: 200px;
+    height: 100px;
     background-color: white;
 
 }
@@ -41,6 +41,7 @@ section{
 @mixin mobile{
     @media (max-width: 768px){
         @content;
+        
     }
 }
 

@@ -16,7 +16,7 @@ function App() {
 
   return (
     
-      <>
+      <div>
       <Cursor/>
         <section id='Homepage' >
           <Navbar/>
@@ -28,7 +28,7 @@ function App() {
         <section id="Resume"> <Portfolio/></section>
         <section id='About'></section>
         <section id='Contact'><Contact/></section>
-        </>
+        </div>
    
   )
 }

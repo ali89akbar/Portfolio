@@ -4,6 +4,7 @@
 .navbar {
     height: 100px;
     margin-left: 190px;
+   
     .wrapper {
         max-width: 1366px;
         margin: auto;
@@ -13,13 +14,14 @@
         height: 100%;
         @include mobile{
            justify-content: flex-end;
-           padding: 20px;
+           padding: 0px;
         }
 
         .name {
             display: flex;
             align-items: center;
             gap: 20px; /* Adjust the gap as needed */
+       
         }
         span{
             font-weight: bold;
