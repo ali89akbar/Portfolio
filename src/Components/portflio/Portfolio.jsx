@@ -29,7 +29,7 @@ const items = [
 id:4,
 title:"Resturant Website",
 img:"https://i.postimg.cc/tJcJxNmP/pro4.png",
-desc:"The Restaurant Website is a modern, responsive web application designed to enhance the dining experience by providing users with a comprehensive overview of a restaurant's offerings. It features a sleek design with an easy-to-navigate interface, allowing customers to browse the menu, make reservations, and view customer reviews. The website also includes a gallery showcasing the restaurant's ambiance and special events. This project demonstrates my proficiency in creating interactive and visually appealing web applications that focus on user experience and functionality.Technologies Used:Frontend: HTML, CSS, JavaScript, React.js Backend: Firebase",
+desc:"The Restaurant Website is a modern, responsive web application designed to enhance the dining experience by providing users with a comprehensive overview of a restaurant's offerings. It features a sleek design with an easy-to-navigate interface, allowing customers to browse the menu, make reservations, and view customer reviews. The website also includes a gallery showcasing the restaurant's ambiance and special events.Technologies Used:Frontend: HTML, CSS, JavaScript, React.js Backend: Firebase",
 demo:"https://resturant-cb439.web.app/"
   },
  {

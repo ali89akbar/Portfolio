@@ -43,6 +43,16 @@ scrollButton:{
 },
 };
 const Hero = () => {
+
+    const download=()=>{
+        const link = document.createElement('a');
+        link.href= "https://drive.google.com/file/d/1MdYupMpTdebV0Eeht4qjEcby-J3ZP9Mt/view"
+        link.download= "https://drive.google.com/file/d/1MdYupMpTdebV0Eeht4qjEcby-J3ZP9Mt/view"
+        document.body.appendChild(link)
+        link.click();
+        document.body.removeChild(link)
+        console.log("Clicked")
+    }
   return (
 <div className="hero">
     <div className="wrapper">
@@ -50,8 +60,8 @@ const Hero = () => {
         <motion.h2 variants={textvariants}>Syed Ali Akbar</motion.h2>
         <motion.h1 variants={textvariants}>Web Developer & Mern </motion.h1>
         <motion.div variants={textvariants} className="buttons">
-            <motion.button variants={textvariants}>See Latest Work</motion.button>
-            <motion.button variants={textvariants}>Resume</motion.button>
+           <a href="#Resume"><motion.button variants={textvariants}>See Latest Work</motion.button></a> 
+             <motion.button variants={textvariants} onClick={download}>Resume</motion.button>
         </motion.div>
         <motion.img variants={textvariants} animate="scrollButton" src="/scrolls.png" alt="" />
         </motion.div>

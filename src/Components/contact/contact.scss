@@ -54,6 +54,7 @@
     
     @include mobile{
         width: 100%;
+        gap: 0px;
         padding-bottom: 100%;
         display: flex;
         justify-self: center;
@@ -77,9 +78,9 @@
         flex-direction: column;
         gap: 20px;
         @include mobile{
-            padding-top: 50%;
-            justify-content: center;
-            align-items: center;
+            top: 0%;
+            padding: 90px;
+            bottom: 100%;
         }
         
    
